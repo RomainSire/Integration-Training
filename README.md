@@ -1,2 +1,2 @@
-# Integration-Training
-Integration training : mostly HTML and CSS here
+# Training for integration
+Integration training : mostly HTML and CSS here.
