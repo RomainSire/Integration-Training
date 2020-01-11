@@ -26,6 +26,8 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
     <!-- CSS links -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -36,21 +38,23 @@
     <!-- *********************************** -->
     <header>
         <section class="header-top">
+
             <div class="header-nav-button">
                 <i class="fas fa-bars"></i>
                 <p>Menu</p>
             </div>
+
             <div class="header-logo">
-                <a href="#">
-                    <img src="img/logo.png" alt="Logo de Marmiton">
-                </a>
+                <a href="#"><img src="img/logo.png" alt="Logo de Marmiton"></a>
             </div>
+
             <div class="header-searchbar">
                 <form action="#" method="get">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                    <input type="text" name="s">
+                    <label for="header-searchbar"><i class="fas fa-search"></i></label>
+                    <input type="text" name="s" id="header-searchbar" placeholder="Je cherche...">
                 </form>
             </div>
+
             <div class="header-connexion-button">
                 <button>
                     <i class="fas fa-user"></i>
@@ -58,6 +62,8 @@
                 </button>
             </div>
         </section>
+
+
         <nav class="header-collapsible-nav">
             <ul>
                 <li>Aujourd'hui</li>
