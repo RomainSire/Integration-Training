@@ -1,0 +1,101 @@
+/* -------------------------------------*/
+/*           GENERAL & TITRES           */
+/* -------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #272745;
+}
+h1, h2, h3, figcaption {
+    font-weight: normal;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------------*/
+/*                HEADER                */
+/* -------------------------------------*/
+.header-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background: #fff;
+}
+.header-nav-button, .header-logo, .header-connexion-button {
+    flex-shrink: 0;
+}
+/* TOP LEFT NAVIGATION BUTTON */
+.header-nav-button {
+    width: 80px;
+    height: 90px;
+    border-right: 2px solid lightgray;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.header-nav-button .fas {
+    color: #ff8a61;
+    font-size: 28px;
+}
+.header-nav-button p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: bold;
+}
+/* LOGO */
+.header-logo {
+    padding: 0 25px;
+}
+.header-logo img {
+    width: 140px;
+}
+/* SEARCH BAR */
+.header-searchbar {
+    width: 100%;
+}
+.header-searchbar form {
+    border: 2px solid lightgray;
+    margin-right: 30px;
+    border-radius: 30px;
+    line-height: 3em;
+}
+.header-searchbar label {
+    width: 10%;
+    color: #ff8a61;
+    font-size: 20px;
+}
+.header-searchbar input {
+    width: 90%;
+    background: none;
+    border: none;
+}
+/* CONNECTION BUTTON */
+.header-connexion-button {
+    width: 350px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: 2px solid lightgray;
+}
