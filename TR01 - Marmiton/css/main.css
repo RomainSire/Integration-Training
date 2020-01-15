@@ -114,7 +114,7 @@ header {
 }
 .header-connexion-button button {
     padding: 0 15px;
-    background: #ff8a61;
+    background: #eb6a3d;
     border: none;
     border-radius: 30px;
     color: #fff;
@@ -124,6 +124,11 @@ header {
     line-height: 20x;
     height: 35px;
     cursor: pointer;
+    transition: all 0.4s;
+}
+.header-connexion-button button:hover {
+    background: #eb6a3dcc;
+    box-shadow: 0 0 5px #aaa;
 }
 .header-connexion-button button .fas {
     font-size: 20px;
@@ -164,6 +169,8 @@ header {
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
+
+    position: relative;
 }
 .main-welcome-panel-bg-img {
     width: 100%;
@@ -180,4 +187,8 @@ header {
 }
 .main-welcome-panel-bg-img:hover {
     filter: unset;
+}
+.main-welcome-panel-content {
+    position: absolute;
+    top: 50px;
 }
