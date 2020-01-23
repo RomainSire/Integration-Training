@@ -141,7 +141,6 @@ header {
 /* COLLAPSIBLE NAV */
 .header-collapsible-nav {
     background: #f5f5f5;
-    /* margin-top: 90px; */
 }
 .header-collapsible-nav ul {
     list-style: none;
@@ -282,3 +281,27 @@ header {
     line-height: 1.2em;
     text-transform: uppercase;
 }
+.main-receipe-gallery .txt-violet {
+    color: #4d3e78;
+}
+.main-receipe-gallery .bg-violet {
+    background: #4d3e78;
+}
+.main-receipe-gallery .article-wrapper {
+    position: relative;
+}
+.main-receipe-gallery .white-square {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+
+}
+
+/* -------------------------------------*/
+/*                FOOTER                */
+/* -------------------------------------*/
+
