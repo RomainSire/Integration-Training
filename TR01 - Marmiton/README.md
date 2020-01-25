@@ -1,5 +1,5 @@
 # WORK IN PROGRESS !
-I'm just getting started on this project, so it's nowhere near finished yet!
+The project is not finished yet. The footer has to be done, as well as a few other details.
 
 ## TR01 Marmiton - Description :
 I started to integrate the french cooking website Marmiton (https://www.marmiton.org/). Just to train and improve my skills.
