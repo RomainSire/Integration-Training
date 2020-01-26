@@ -358,3 +358,64 @@ footer {
     top: 20px;
     flex-shrink: 0;
 }
+.footer-nav {
+    color: #fff;
+    text-align: left;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+}
+.footer-nav h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.footer-nav ul {
+    list-style: none;
+    padding-left: 10px;
+}
+.footer-nav li {
+    line-height: 1.8em;
+
+    /* lazy to add a <a></a> to each <li> on the html... sorry ! */
+    cursor: pointer;
+}
+.footer-nav div:nth-child(2) ul {
+    column-count: 2;
+}
+.footer-nav div:nth-child(3) ul {
+    column-count: 4;
+}
+.footer-index {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+    color: #fff;
+}
+.footer-index h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+.footer-index div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footer-index p {
+    background: #fff4;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    /* lazy to add a <a></a> to each <li> on the html... sorry ! */
+    cursor: pointer;
+}
+.footer-credits {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+    color: #fff;
+}
