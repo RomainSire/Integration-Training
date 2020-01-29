@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- chargement des icones Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- chargement Police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <!-- Appel des feuilles de style -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title> M10 - Portfolio</title>
+  </head>
+  <body>
+
+<!--------------------------------------------------------------------->
+<!--       HEADER : contient le logo, et le menu de navigation       -->
+<!--------------------------------------------------------------------->
+    <header>
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo">
+        <p>John Doe</p>
+      </div><!--
+    --><nav>
+        <a href="index.html"><i class="fas fa-home"></i><br>Accueil</a>
+        <a href="#realisations"><i class="fas fa-folder-open"></i><br>Réalisations</a>
+        <a href="#contact"><i class="fas fa-envelope"></i><br>Contact</a>
+      </nav>
+    </header>
+
+<!--------------------------------------------------------------------->
+<!--    DIV WELCOME : Message d'accueil avec photo en background     -->
+<!--------------------------------------------------------------------->
+    <div id="welcome">
+      <h1>Bonjour et bienvenue sur mon portfolio</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a href="#">Découvrez-moi !</a>
+    </div>
+
+<!--------------------------------------------------------------------->
+<!--      MAIN : le contenu, divisé en 4 sections différentes        -->
+<!--------------------------------------------------------------------->
+    <main>
+
+      <!--                SECTION 1 : Compétences                    -->
+      <!--------------------------------------------------------------->
+      <section id="Competences">
+        <h2>Mes compétences</h2>
+        <!-- Chaque compétence est contenue dans une DIV COMPETENCE -->
+        <div class="competence">
+          <img src="img/html.svg" alt="Graphe de la compétence html">
+          <p>80%</p>
+          <h3>HTML</h3>
+        </div><!--
+      --><div class="competence">
+          <img src="img/css.svg" alt="Graphe de la compétence css">
+          <p>95%</p>
+          <h3>CSS</h3>
+        </div><!--
+      --><div class="competence">
+          <img src="img/js.svg" alt="Graphe de la compétence Javascript">
+          <p>75%</p>
+          <h3>Javascript</h3>
+        </div>
+      </section>
+
+      <!--                  SECTION 2 : Services                     -->
+      <!--------------------------------------------------------------->
+      <section id="services">
+        <h2>Mes Services</h2>
+        <!-- Chaque service est contenu dans une DIV SERVICE -->
+        <div class="service">
+          <!-- Le logo Font Awesome est inclu dans une petite div dédiée -->
+          <div class="service-logo">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <h3>On discute</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="service">
+          <!-- Le logo Font Awesome est inclu dans une petite div dédiée -->
+          <div class="service-logo">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>On tente</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="service">
+          <!-- Le logo Font Awesome est inclu dans une petite div dédiée -->
+          <div class="service-logo">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>On code</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </section>
+
+      <!--                SECTION 3 : Réalisations                   -->
+      <!--------------------------------------------------------------->
+      <section id="realisations">
+        <h2>Quelques exemples de réalisations</h2>
+        <!-- Chaque exemple est contenu dans un ARTICLE EXEMPLE -->
+        <article class="realisation">
+          <h3>Orange Juice :</h3>
+          <img src="img/realisation/1.png" alt="Illustration de la réalisation 1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">En savoir plus <i class="fas fa-plus-circle"></i></a>
+        </article>
+        <article class="realisation">
+          <h3>Time Past :</h3>
+          <img src="img/realisation/2.png" alt="Illustration de la réalisation 2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">En savoir plus <i class="fas fa-plus-circle"></i></a>
+        </article>
+        <article class="realisation">
+          <h3>Aqua Plant :</h3>
+          <img src="img/realisation/3.png" alt="Illustration de la réalisation 3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">En savoir plus <i class="fas fa-plus-circle"></i></a>
+        </article>
+        <article class="realisation">
+          <h3>Sweet Flower :</h3>
+          <img src="img/realisation/4.png" alt="Illustration de la réalisation 4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#">En savoir plus <i class="fas fa-plus-circle"></i></a>
+        </article>
+      </section>
+
+      <!--                  SECTION 4 : Contact                     -->
+      <!-------------------------------------------------------------->
+      <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- Formulaire de contact : 3 champs et 2 boutons -->
+        <form action="#" method="post">
+          <input type="text" name="firstName" required placeholder="Votre prénom"><!--
+        --><input type="email" name="email" required placeholder="Votre mail">
+          <input type="text" name="message" required placeholder="Votre message">
+          <input type="submit" value="Envoyer">
+          <input type="reset" value="Effacer">
+        </form>
+      </section>
+
+    </main>
+
+<!--------------------------------------------------------------------->
+<!--                       FOOTER : crédits 3WA                      -->
+<!--------------------------------------------------------------------->
+    <footer id="licence">
+      <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" style="border-width:0" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" /></a><br /><span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants, Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br />Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Muller</a>.
+    </footer>
+
+  </body>
+</html>
