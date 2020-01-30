@@ -5,3 +5,6 @@ My goal is just to train, not to build an exact copy. As a consequence, for exam
 
 Also, I used only HTML and CSS on this project, so some javascript effects are missing : especially for the header.
 And also, there is no backend obviously.
+
+## TO DO:
+Responsive !
