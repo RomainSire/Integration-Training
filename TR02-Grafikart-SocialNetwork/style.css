@@ -4,7 +4,9 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
+    background: #F5F5F5;
 }
 a {
     color: inherit;
@@ -14,6 +16,13 @@ h1, h2, h3, h4 {
     margin: 0;
     font-weight: normal;
 }
+.clear {
+    clear: both;
+}
+
+/**
+ * HEADER
+ */
 
 .topbar {
     background: #2C3E50;
@@ -33,3 +42,186 @@ h1, h2, h3, h4 {
 .top-navigation a:hover, .top-navigation .selected {
     color: #fff;
 }
+
+/**
+ * MAIN
+ */
+
+.main {
+    padding: 10px 20px;
+}
+/**
+ * Side Navigation
+ */
+.side-navigation {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    height: 90px;
+}
+.side-navigation a {
+    width: 45%;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.side-navigation a:hover, .side-navigation .selected {
+    background: #fff;
+    border: 1px solid #DBDBDB;
+    color: #000;
+    font-weight: bold;
+}
+.side-navigation .fas {
+    padding-right: 20px;
+}
+/**
+ * Publication & Profile
+ */
+.publication, .profile {
+    background: #fff;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.publication header, .profile header {
+    padding: 10px;
+}
+.profile-pic {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.publication h2, .profile h2 {
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.datetime {
+    margin: 0;
+    font-size: 12px;
+    line-height: 2em;
+    color: rgba(0, 0, 0, 0.38);
+}
+.publication-pic {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+}
+.publication main p, .profile main p {
+    margin: 14px;
+    text-align: justify;
+}
+.publication footer {
+    background: #FBFBFB;
+    border-top: 1px solid #DBDBDB;
+    color: #BDBDBD;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.publication footer a:hover {
+    color: #34AAFF;
+}
+/**
+ * Suggestions
+ */
+ .suggestions {
+    color: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+ }
+.suggestions h3 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: 2px solid #000000;
+}
+.suggestion {
+    margin: 20px auto;
+    height: 90px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.suggestion img {
+    width: 90px;
+    height: auto;
+    margin-right: 15px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+}
+.suggestion h4 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2em;
+}
+.suggestion p {
+    margin: 0;
+}
+.suggestion .add {
+    color: #34AAFF;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.suggestions a:hover {
+    text-decoration: underline;
+}
+
+/*
+ * Grands écrans
+ */
+@media screen and (min-width: 800px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3%;
+    }
+    .top-navigation a {
+        padding: 0 0 0 20px;
+    }
+
+    .main {
+        display: flex;
+        padding: 20px 3%;
+    }
+    .side-navigation {
+        width: 180px;
+        flex-shrink: 0;
+        margin-right: 30px;
+
+        flex-flow: column nowrap;
+        align-content: space-between;
+        align-items: stretch;
+        height: auto;
+    }
+    .side-navigation a {
+        width: 100%;
+    }
+    .sidebar {
+        width: 30%;
+        margin-left: 30px;
+        flex-shrink: 0;
+    }
+}
+
+/*
+ * Correction bug très petits écrans
+ */
+ @media screen and (max-width: 400px) {
+    .side-navigation {
+        flex-flow: column nowrap;
+        height: auto;
+    }
+    .side-navigation a {
+        width: 100%;
+
+    }
+ }
