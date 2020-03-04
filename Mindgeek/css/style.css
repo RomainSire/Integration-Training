@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #fcfcfc;
+}
+
+/* -------------------------------------------*/
+/*                FONTS DE BASE               */
+/* -------------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #777;
+}
+h1, h2, h3, nav {
+  font-family: 'Candal', sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------------------------------*/
+/*                   HEADER                   */
+/* -------------------------------------------*/
+
+/* NAV du header : en flexbox! Les liens doivent être en display block */
+#header-nav {
+  color: #213e4e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* contenu limité à 80% max */
+  padding: 0 10% 10px 10%;
+}
+#header-nav a {
+  display: block;
+  line-height: 1.6em;
+  margin: 5px;
+  /* Transition pour le hover */
+  -webkit-transition: all 0.5s ease-out;
+       -o-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+#header-nav a:hover {
+  color: #fb8b9b;
+}
+#header-nav i {
+  font-size: 1.6em;
+  color: #fb8b9b;
+  /* Transition pour le hover */
+  -webkit-transition: all 0.5s ease-out;
+       -o-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+#header-nav a:hover i {
+  color: #213e4e;
+}
+#header-nav img {
+  padding: 20px;
+  /* Transition pour le hover */
+  -webkit-transition: all 0.5s ease-out;
+       -o-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out;
+}
+#header-nav img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+
+/* DIV WELCOME, avec le background */
+#welcome {
+  background: url("../img/background.jpg") no-repeat center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #fff;
+  /* contenu limité à 80% max */
+  padding: 40px 10%;
+}
+#welcome h1 {
+  font-size: 3em;
+  line-height: 1.8em;
+}
+#welcome p {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+
+/* DIV SEARCH, Barre de recherche du site */
+#search input {
+  background-color: #fb8b9b;
+  text-align: left;
+  border: 0;
+  /*background-color: #fff0;*/
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.3em;
+  width: 100%;
+  /* contenu limité à 80% max */
+  padding: 20px 10%;
+}
+
+/* -------------------------------------------*/
+/*                    MAIN                    */
+/* -------------------------------------------*/
+
+/*           Pour la page d'accueil           */
+/* -------------------------------------------*/
+main {
+  /* contenu limité à 80% max */
+  padding: 20px 10%;
+}
+main h2 {
+  font-size: 1.8em;
+  color: #213e4e;
+  border: 1px dashed #213e4e;
+  border-bottom: 0;
+  padding: 20px;
+}
+main h3 {
+  font-size: 1.2em;
+  color: #fb8b9b;
+}
+main i {
+  font-size: 2.5em;
+  color: #fb8b9b;
+}
+main p {
+  line-height: 1.6em;
+  margin: 0 2%;
+}
+main a {
+  color: #fb8b9b;
+}
+main .price {
+  font-size: 1.3em;
+  color: #fb8b9b;
+  text-align: center;
+}
+section p {
+  text-align: left;
+}
+
+/* DIV SECTION-CONTAINER: en flexbox */
+/* Dans la div .section-container, il y a plusieurs div .section-item */
+.section-container {
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.section-item {
+  padding: 20px 0;
+}
+
+
+/*         Pour les pages des offres          */
+/*      Dans ce cas, une classe "offres"      */
+/*         est appliquée à la section         */
+/* -------------------------------------------*/
+.offres .section-item {
+  border: 1px dashed #213e4e;
+  margin: 20px 0;
+}
+.offres h3 {
+  background-color: #213e4e;
+  color: #fff;
+  line-height: 4em;
+  margin: 0 2% 20px 2%;
+}
+.offres ul {
+  text-align: left;
+  list-style-type: circle;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+.offres .price {
+  color: #777;
+  font-family: 'Candal', sans-serif;
+}
+.offres a {
+  display: block;
+  background-color: #fb8b9b;
+  line-height: 3em;
+  margin: 20px 2% 0 2%;
+  color: #fff;
+  font-family: 'Candal', sans-serif;
+  font-size: 1.2em;
+}
+.offres a:hover {
+  filter: drop-shadow(0 0 5px #213e4ebb);
+}
+
+/*         Pour la page de contact           */
+/*     Dans ce cas, une classe "contact"      */
+/*        est appliquée à la section          */
+/* -------------------------------------------*/
+.contact i {
+  display: block;
+  border-bottom: 1px dashed #fb8b9b;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.contact p {
+  text-align: center;
+}
+/* Google Map */
+iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+
+
+
+/* -------------------------------------------*/
+/*                   FOOTER                   */
+/* -------------------------------------------*/
+footer {
+  background-color: #213e4e;
+  color: #fff;
+  /* contenu limité à 80% max */
+  padding: 40px 10%;
+}
+
+/* NAV du header : en flexbox! Les liens doivent être en display block */
+#footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer-nav a {
+  display: block;
+  padding: 15px;
+}
+#footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* licence 3WA */
+#licence {
+    text-align: center;
+    padding: 25px;
+    font-size: 0.75em;
+}
+#licence img {
+    width: 50px;
+}
+
+
+/* -------------------------------------------*/
+/*            RESPONSIVE : DESKTOP            */
+/* -------------------------------------------*/
+@media screen and (min-width: 1025px) {
+  /* Les items de HEADER NAV sont disposés en ligne */
+  /* dans le main, les div section-item sont disposés en ligne */
+  /* Et pareil pour le footer-nav */
+  #header-nav, .section-container, #footer-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-item {
+    width: 32%;
+    align-self: flex-start;
+  }
+}

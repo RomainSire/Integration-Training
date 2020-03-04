@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Chargement des icones Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Chargement des polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Open+Sans:400,600,800" rel="stylesheet">
+
+    <!-- Chargement des feuilles de style -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>M11 - Mindgeek | Serveur mutualisé</title>
+  </head>
+  <body>
+
+<!---------------------------------------------------------------->
+<!--    HEADER : contient la nav, la search bar,                -->
+<!--             et éventuellement la div d'accueil             -->
+<!---------------------------------------------------------------->
+    <header>
+    <!-- NAV : sous forme de flexbox ! -->
+      <nav id="header-nav">
+        <a href="index.html"><img src="img/logo.png" alt="Logo de Mindgeek"></a>
+        <a href="serveur-mutualise.html"><i class="fas fa-users"></i><br>Serveur Mutualisé</a>
+        <a href="serveur-dedie.html"><i class="fas fa-user"></i><br>Serveur Dédié</a>
+        <a href="cloud.html"><i class="fas fa-cloud"></i><br>Solution "Cloud"</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i><br>Contact</a>
+      </nav>
+    <!-- DIV SEARCH : barre pour effectuer les recherches -->
+      <div id="search">
+        <form action="#" method="post">
+          <input type="text" name="search" placeholder="Que recherchez-vous ?">
+        </form>
+      </div>
+    </header>
+
+<!---------------------------------------------------------------->
+<!--    MAIN : Divisé en plusieurs sections, si besoin          -->
+<!---------------------------------------------------------------->
+    <main>
+      <!--            SECTION                                   -->
+      <!---------------------------------------------------------->
+      <section class="offres">
+        <h2>Le serveur mutualisé</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <!-- La div "section-container" servira de flexbox pour organiser toutes les autres petites div "section-item" qu'elle contient -->
+        <div class="section-container">
+          <div class="section-item">
+            <h3>Perso - 100 Go</h3>
+            <p>Un nom de domaine offert, idéal pour votre site perso.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipisicing elit</li>
+              <li>Sed do eiusmod tempor incididunt</li>
+            </ul>
+            <p class="price">2,99€ HT / Mois</p>
+            <a href="#">Commander</a>
+          </div>
+          <div class="section-item">
+            <h3>Pro - 250 Go</h3>
+            <p>Un nom de domaine offert, la solution professionnelle.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipisicing elit</li>
+              <li>Sed do eiusmod tempor incididunt</li>
+            </ul>
+            <p class="price">5,99€ HT / Mois</p>
+            <a href="#">Commander</a>
+          </div>
+          <div class="section-item">
+            <h3>Performance - 500 Go</h3>
+            <p>Un nom de domaine offert, pensé pour les sites techniques.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipisicing elit</li>
+              <li>Sed do eiusmod tempor incididunt</li>
+            </ul>
+            <p class="price">9,99€ HT / Mois</p>
+            <a href="#">Commander</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+<!---------------------------------------------------------------->
+<!--    FOOTER : contient une autre nav, et les crédits 3WA     -->
+<!---------------------------------------------------------------->
+    <footer>
+      <!-- NAV : sous forme de flexbox ! -->
+      <nav id="footer-nav">
+        <a href="index.html">Accueil</a>
+        <a href="serveur-mutualise.html">Serveur Mutualisé</a>
+        <a href="serveur-dedie.html">Serveur Dédié</a>
+        <a href="cloud.html">Solution "Cloud"</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Se Connecter</a>
+      </nav>
+      <!-- crédits 3WA -->
+      <div id="licence">
+        <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" style="border-width:0" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png" /></a><br /><span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants, Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br />Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="http://www.justine-muller.fr">Justine Muller</a>.
+      </div>
+    </footer>
+  </body>
+</html>
